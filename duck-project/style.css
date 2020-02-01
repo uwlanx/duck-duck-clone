@@ -44,14 +44,53 @@ body {
     background: white;
     color: black;
 }
-.menu {
-    background: green;
+.dropDown{
+    background: rgb(27, 29, 27);
+}
+.dropBtn{
+    background: rgb(27, 29, 27);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropDown {
     position: relative;
     display: inline-block;
 }
-.menuContent {
-    font-size: 27px;
-    position: absolute;
+.dropContent {
     display: none;
-    min-width: 18px;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropContent ul{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    list-style: none;
+    display: block;
+}
+.dropContent:hover {
+    background-color: #f1f1f1;
+}
+.dropDown:hover .dropContent {
+    display: block;
+}
+.dropDown:hover .dropBtn {
+    background: grey;
+    color: black;
+}
+.dropContent li:hover {
+    text-decoration: underline;
+}
+.dropContent h4 {
+    font-size: 12px;
+}
+.sideBar {
+    display: flex;
+    justify-content: center;
 }
